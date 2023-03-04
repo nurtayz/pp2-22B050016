@@ -1,0 +1,8 @@
+from datetime import date, timedelta
+# Current date
+today = date.today()
+# Subtract 5 days
+five_days_ago = today - timedelta(days=5)
+# Print
+print('Current Date :', today)
+print('5 days ago :', five_days_ago)

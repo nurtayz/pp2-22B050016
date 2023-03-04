@@ -1,0 +1,9 @@
+import datetime
+date_format = "%d/%m/%Y"
+ 
+date1 = input("Input the first date in (dd/mm/yy) format: ")
+date2 = input("Input the second date in (dd/mm/yy) format: ")
+a = datetime.datetime.strptime(date1, date_format)
+b = datetime.datetime.strptime(date2, date_format)
+delta = b - a
+print ("There are", delta.total_seconds(), "seconds in between", date1,"and", date2)

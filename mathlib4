@@ -1,0 +1,14 @@
+import math 
+  
+def area_parallelogram(length, height): 
+    area = length * height
+    return area 
+  
+length = float(input('Length of Parallelogram: ')) 
+height = float(input('Height of Parallelogram: ')) 
+  
+# Calculate Area of Parallelogram 
+area = area_parallelogram(length, height) 
+  
+# Print area of Parallelogram 
+print("Area of Parallelogram : {}".format(area))

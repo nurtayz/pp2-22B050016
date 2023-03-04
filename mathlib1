@@ -1,0 +1,5 @@
+import math  
+def degreeToRadian(degree): 
+ return (degree * math.pi)/180 
+degree = int(input())
+print('Radian of %0.1f degree is %0.2f' %(degree, degreeToRadian(degree)))

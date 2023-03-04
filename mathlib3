@@ -1,0 +1,11 @@
+import math
+# Function to calculate area of regular polygon
+def area_of_polygon(number_of_sides, length_of_sides):
+   area = (number_of_sides * (length_of_sides ** 2)) / (4 * math.tan(math.pi / number_of_sides))
+   return area
+# Driver program
+if __name__ == "__main__":
+   number_of_sides = int(input("Number of sides: "))
+   length_of_sides = int(input("Length of the sides: "))
+   result = area_of_polygon(number_of_sides, length_of_sides)
+   print("Area of polygon is: {:.2f}".format(result))
