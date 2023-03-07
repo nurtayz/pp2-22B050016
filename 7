@@ -1,0 +1,5 @@
+snake_case = "this_is_a_sample_string"
+words = snake_case.split('_')
+camel_case = words[0] + ''.join([w.capitalize() for w in words[1:]])
+
+print(camel_case)

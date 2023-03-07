@@ -1,0 +1,11 @@
+import re
+
+string = "aabbb"
+pattern = r"aab{2,3}"
+
+match = re.search(pattern, string)
+
+if match:
+    print("Match found!")
+else:
+    print("Match not found.")
