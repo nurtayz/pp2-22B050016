@@ -1,0 +1,21 @@
+import os
+
+path = "/path/to/directory"
+
+# list directories only
+directories = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
+print("Directories:")
+for d in directories:
+    print(d)
+
+# list files only
+files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+print("\nFiles:")
+for f in files:
+    print(f)
+
+# list directories and files
+dirs_and_files = os.listdir(path)
+print("\nDirectories and files:")
+for d in dirs_and_files:
+    print(d)

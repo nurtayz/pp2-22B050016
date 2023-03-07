@@ -1,0 +1,6 @@
+string = "Count The Number Of UpperCase And LowerCase Letters In This String"
+upper_count = sum(1 for c in string if c.isupper())
+lower_count = sum(1 for c in string if c.islower())
+
+print("Uppercase letters:", upper_count)
+print("Lowercase letters:", lower_count)

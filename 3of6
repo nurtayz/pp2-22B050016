@@ -1,0 +1,10 @@
+def is_palindrome(string):
+    string = string.lower()  # Convert to lowercase
+    string = ''.join(filter(str.isalnum, string))  # Remove non-alphanumeric characters
+    return string == string[::-1]  # Check if string is equal to its reverse
+
+string = "A man, a plan, a canal: Panama"
+if is_palindrome(string):
+    print("The string is a palindrome")
+else:
+    print("The string is not a palindrome")

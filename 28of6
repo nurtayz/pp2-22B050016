@@ -1,0 +1,12 @@
+import os
+
+file_path = '/path/to/file'
+
+if os.access(file_path, os.F_OK):
+    if os.access(file_path, os.R_OK | os.W_OK):
+        os.remove(file_path)
+        print('File deleted successfully.')
+    else:
+        print('You do not have sufficient permissions to delete this file.')
+else:
+    print('The specified file does not exist.')
