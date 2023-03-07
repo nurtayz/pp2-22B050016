@@ -1,0 +1,6 @@
+import re
+
+camel_case = "ConvertThisCamelCaseStringToSnakeCase" #here again
+snake_case = re.sub(r'(?<!^)(?=[A-Z])', '_', camel_case).lower()
+
+print(snake_case)
