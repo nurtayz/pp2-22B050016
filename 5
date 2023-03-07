@@ -1,0 +1,11 @@
+import re
+#put info below xdd
+string = "acccb"
+pattern = r"a.*b$"
+
+match = re.search(pattern, string)
+
+if match:
+    print("Match found!")
+else:
+    print("Match not found.")
