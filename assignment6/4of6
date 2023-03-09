@@ -1,0 +1,16 @@
+import time
+import math
+
+def square_root_with_delay(number, delay):
+    time.sleep(delay / 1000)
+    return math.sqrt(number)
+
+number = 25100
+delay = 2123
+
+start_time = time.time() * 1000
+result = square_root_with_delay(number, delay)
+end_time = time.time() * 1000
+
+print(f"Square root of {number} after {delay} milliseconds is {result}")
+print(f"Elapsed time: {end_time - start_time} milliseconds")

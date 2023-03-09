@@ -1,0 +1,8 @@
+filename = "textfile.txt"
+num_lines = 0
+
+with open(filename, 'r') as f:
+    for line in f:
+        num_lines += 1
+
+print("Number of lines:", num_lines)
