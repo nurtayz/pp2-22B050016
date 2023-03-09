@@ -1,0 +1,8 @@
+import re
+#put info below
+string = "hello_world is a sequence of lowercase_letters joined_with an_underscore."
+pattern = r"[a-z]+_[a-z]+"
+
+matches = re.findall(pattern, string)
+
+print(matches)

@@ -1,0 +1,8 @@
+string = "This is a sample string, with spaces. And, commas too." #put info here
+replacements = [',', ' ', '.']
+new_string = string
+
+for r in replacements:
+    new_string = new_string.replace(r, ':')
+
+print(new_string)

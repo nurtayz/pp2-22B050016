@@ -1,0 +1,6 @@
+import re
+
+string = "SplitThisStringAtUpperCaseLetters" #here
+words = re.findall('[A-Z][^A-Z]*', string)
+
+print(words)

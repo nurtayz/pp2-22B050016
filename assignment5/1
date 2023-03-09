@@ -1,0 +1,12 @@
+import re
+
+# define the regular expression pattern
+pattern = r'a[b]*'
+
+strings = ['ab', 'aab', 'abbbbb', 'ac', 'abc'] #here put ur patterns
+for s in strings:
+    match = re.search(pattern, s)
+    if match:
+        print(f"'{s}' matches the pattern")
+    else:
+        print(f"'{s}' does not match the pattern")
