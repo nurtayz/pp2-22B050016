@@ -1,0 +1,10 @@
+import math
+# input the value of the parallel sides of the trapezoid
+a = float(input("Enter the value of 'a': "))
+b = float(input("Enter the value of 'b': "))
+# input the value of the height
+h = float(input("Height: "))
+# calculate the area of the trapezoid
+area = (a + b) * h / 2
+# print the area
+print("The area of the trapezoid is: ", float(math.ceil(area)))

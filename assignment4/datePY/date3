@@ -1,0 +1,12 @@
+from datetime import datetime
+# current date and time
+now = datetime.now()
+ 
+# print current date and time
+print("Current date & time: ", now)
+ 
+# drop microseconds
+now = now.replace(microsecond=0)
+ 
+# print new date and time
+print("New date & time: ", now)
